@@ -4,7 +4,7 @@ El proyecto implicó la implementación de dos microservicios en contenedores in
 
 <div align="center">
 <img  width="500" height="400" src="https://github.com/Marianito5382/Proyecto-final-virtualizacion/blob/main/Ubuntu-16.04-xenial-xerus-review-que-es-ubuntu.jpg">
-<img  width="500" height="400" src="">
+<img  width="500" height="400" src="https://github.com/Marianito5382/Proyecto-final-virtualizacion/blob/main/docker-compose-1.png">
 </div>
 
 
