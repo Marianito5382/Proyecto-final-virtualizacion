@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  psql_cliente:
+    image: postgres
+    container_name: clientes
+    environment:
+      POSTGRES_DB: Base_clientes
+      POSTGRES_USER: elcliente
+      POSTGRES_PASSWORD: 123abc
+    volumes:
+      - ./init2.sql:/docker-entrypoint-initdb.d/init2.sql
+    ports:
+      - "5432:5432"
+
+  psql_ventas:
+    image: postgres
+    container_name: ventas
+    environment:
+      POSTGRES_DB: Base_ventas
+      POSTGRES_USER: elvendedor
+      POSTGRES_PASSWORD: 123abc
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5433:5432"

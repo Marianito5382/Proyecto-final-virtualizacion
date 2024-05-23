@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - DB_HOST_VENTAS=192.168.1.51
+      - DB_PORT_VENTAS=5433
+      - DB_USER_VENTAS=elvendedor
+      - DB_PASS_VENTAS=123abc
+      - DB_VENTAS=Base_ventas
+

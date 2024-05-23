@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+
+  clientes_productos:
+    build:
+      context: ./clientes_productos
+    restart: always
+
+  ventas_stock:
+    build:
+      context: ./ventas_stock
+    restart: always
+
+  control_stock:
+    build:
+      context: ./control_stock
+    restart: always
+
